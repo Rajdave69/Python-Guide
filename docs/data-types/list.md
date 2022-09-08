@@ -208,6 +208,3 @@ These are some of the most common list methods:
 
 
     
-
-
-
