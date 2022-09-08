@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Raj's Vault",
-  tagline: 'Raj\'s Vault is a collection of my thoughts, ideas, and stuff.',
+  title: "Raj's Python Guide",
+  tagline: 'Learn Python Programming!',
   url: 'https://rajtech.me',
-  baseUrl: '/vault/',
+  baseUrl: '/python-guide/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -33,19 +33,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-
+          editUrl: "https://github.com/RajDave69/Python-Guide/edit/main/",
         },
-        blog: {
-        routeBasePath: '/', // Serve the blog at the site's root
-
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,22 +48,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        content: `⭐️ If you like this Guide, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/RajDave69/Python-Guide">GitHub</a> and check out my <a target="_blank" rel="noopener noreferrer" href="https://rajtech.me">Website</a>`,
+      },
       navbar: {
-        title: 'My Site',
+        title: "Raj's Python Guide",
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/', label: 'Blog', position: 'left'},
+
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Learn Python',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/RajDave69/Python-Guide',
             label: 'GitHub',
             position: 'right',
           },
@@ -81,46 +70,55 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tutorial',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Intro',
+                to: '/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'My Socials',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://rajtech.me/github',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'https://rajtech.me/instagram',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://rajtech.me/twitter',
+
               },
+              {
+                label: 'YouTube',
+                href: 'https://rajtech.me/youtube',
+              }
             ],
           },
           {
-            title: 'More',
+            title: 'My Other Projects',
             items: [
               {
-                label: 'Blog',
-                to: '/',
+                label: 'GCR Renamer | Chrome Extension',
+                href: 'https://github.com/Rajdave69/GCR-Renamer',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'BPS Circular API',
+                href: 'https://github.com/BPS-Circular-API/api',
               },
+                {
+                  label: 'Mini Projects',
+                  href: 'https://github.com/Rajdave69/Mini-Projects'
+                }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Raj's Vault. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
