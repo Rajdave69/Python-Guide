@@ -10,6 +10,11 @@ This section will teach you the basics of Python syntax, indentation, and commen
 
 Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest function in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
 
+Before starting to code, let's know about some basic functions to input and display the output of the python program.
+
+As aforementioned, you can store different sorts of data in different variables
+In the previous examples we only stored certain constants in the variable, now we'll learn to store dynamic inputs from the terminal window and display it.
+
 ```python title="main.py"
 print("Hello World!")
 ```
@@ -64,5 +69,6 @@ Comments are used to explain Python code. They are created by using the `#` symb
 ```python title="comments.py"'
 # This is a comment
 print("Hello, World!") # This is a comment
+# This line of code prints a string, "Hello, World!"
 ```
 Comments can be used to explain Python code. They can be used to explain what the code does, or why it does something. Whatever is written after the `#` symbol will be ignored by Python while running the code.
