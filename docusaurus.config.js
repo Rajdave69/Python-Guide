@@ -83,20 +83,20 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://rajtech.me/github',
+                href: 'https://rajtech.me/r/github',
               },
               {
                 label: 'Instagram',
-                href: 'https://rajtech.me/instagram',
+                href: 'https://rajtech.me/r/instagram',
               },
               {
                 label: 'Twitter',
-                href: 'https://rajtech.me/twitter',
+                href: 'https://rajtech.me/r/twitter',
 
               },
               {
                 label: 'YouTube',
-                href: 'https://rajtech.me/youtube',
+                href: 'https://rajtech.me/r/youtube',
               }
             ],
           },
