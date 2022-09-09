@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 import Tabs			from "@theme/Tabs";
 import TabItem		from "@theme/TabItem";
@@ -50,7 +50,8 @@ Make sure you indent the code inside the function. The code will not run if it i
 
 ## Calling a Function
 
-To call a function, use the function name followed by parenthesis:
+To call a function we pass in the necessary parameters in positional or keyword format which will be described later.
+Also, calling a function with no parameters is allowed and can be done as follows:
 
 ```python
 my_function()
