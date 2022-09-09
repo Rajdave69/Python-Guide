@@ -25,6 +25,7 @@ for i in range(5):
 
 Here, `i` is a variable that will be used to iterate over the sequence. The variable can be named anything, but it is common to use i, j, k, etc. as variable names in loops.
 
+
 ### Loop Through a Sequence
 
 To loop through a sequence, we can use the `for` loop. This code will print the numbers 1 to 5.
@@ -37,6 +38,7 @@ for i in ["apple", "banana", "cherry"]:
 The `for` loop will iterate over the sequence, and print each item in the sequence.
 
 The variable `i` stores the value of the current item in the sequence. It changes every time the loop goes through a new item in the sequence.
+
 
 ### Loop Through a String
 
@@ -53,6 +55,7 @@ for i in "banana":
 
 The `while` loop is used to repeat a block of code as long as a condition is true.
 
+
 ### Loop While Condition is True
 
 This code will print the numbers 0 to 4.
@@ -68,6 +71,7 @@ The `while` loop will continue to execute as long as the condition is true. The 
 
 The `while` loop is useful when you don't know how many times you want to loop the code.
 
+
 ### Infinite Loops
 
 An infinite loop is a loop that never ends. This code will loop forever.
@@ -80,8 +84,8 @@ while True:
 This code will also loop forever.
 
 ```python
-
 i = 0
+
 while i < 5:
     print(i)
 ```

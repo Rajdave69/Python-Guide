@@ -2,6 +2,9 @@
 sidebar_position: 6
 ---
 
+import Tabs			from "@theme/Tabs";
+import TabItem		from "@theme/TabItem";
+
 # Conditionals 
 
 ## What are conditionals?
@@ -116,6 +119,10 @@ else:
 
 * We do not need to use the `==` operator to check if a boolean variable is True or False. We can just use the variable name. Since, True and `x == True` both return True.
 
+
+<Tabs>
+<TabItem value="right" label="✔ Right" default>
+
 ```python
 x = True
 y = False
@@ -126,3 +133,22 @@ if x:
 if y:
     print("y is True")
 ```
+
+
+</TabItem>
+<TabItem value="wrong" label="❌ Wrong">
+
+```python
+x = True
+y = False
+
+if x == True:
+    print("x is True")
+  
+if y == True:
+    print("y is True")
+```
+
+
+</TabItem>
+</Tabs>
