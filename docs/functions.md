@@ -177,15 +177,12 @@ echo(name="Emil", age=36) # name = Emil age = 36
 To let a function return a value, use the `return` statement:
 The `return` statement stops the execution of a function and returns the value of the expression following the `return` keyword.
 
-
-
 ```python
 def add(x, y):
     return x + y
     
 print(add(5, 3)) # 8
 ```
-
 
 Note
 - If the function does not have a `return` statement, it will return `None`.
@@ -217,4 +214,25 @@ def print_hello():
 </Tabs>
 
 :::
+<br/>
+
+## Return Value Annotations
+
+You can also specify the data-type of the return value. This is useful if you want to make sure the user gets the correct data-type from the function:
+
+```python
+def square(number: int) -> int:
+    return number * number
+```
+
+Here, the `->` is used to specify the return value data-type. It is called a return value annotation. It is not required, but it is good practice to use it. The return value annotation is not checked by Python, it is just a hint for the user.
+
+### Multiple Return Annotations
+
+You can also specify multiple return values. This is useful if you want to make sure the user gets the correct data-type from the function:
+
+```python
+def add_or_concat(x, y) -> int | str:
+    return x + y # If x and y are both integers, return an integer. Else it will return a string.
+```
 

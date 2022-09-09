@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 ---
+import Tabs			from "@theme/Tabs";
+import TabItem		from "@theme/TabItem";
 
 # Python Syntax
 
@@ -18,7 +20,50 @@ In the previous examples we only stored certain constants in the variable, now w
 ```python title="main.py"
 print("Hello World!")
 ```
+
 This line of code uses the print() function to print the string "Hello World!" to the screen.
+
+
+:::tip "Pythonic" Code
+
+It's better to make code look like Python code, rather than C code. This means using spaces instead of tabs, and using lowercase names for functions and variables. This is called "Pythonic" code.
+
+It is also recommended to use the `snake_case` convention for naming variables and functions. This means that all words are lowercase, and spaces are replaced with underscores. For example, `my_function` and `my_variable`.
+
+- Make sure to keep a space before and after the `=` equal sign when assigning values to variables, for example `x = 5`.
+- Make sure to keep a space after (not before) commas, for example `print("Hello", "World")`.
+- Make sure to keep a space after (not before) colons, for example `if x == 5:`.
+- Make sure to not leave a space before parentheses, for example `print("Hello")` and `my_function()`, not `print ("Hello")` and `my_function ()`.
+- Do not use semicolons at the end of Python statements.
+- Have good variable names, for example `a` is a bad variable name, but `age` is a good variable name.
+- Prefer double quotes over single quotes, for example `print("Hello World")` instead of `print('Hello World')`.
+- Prefer `f-strings` over `format()` or `%` string formatting, for example `print(f"Hello {name}")` instead of `print("Hello {}".format(name))` or `print("Hello %s" % name)`. It makes the code more human-readable/
+
+<Tabs>
+<TabItem value="right" label="✔ Right" default>
+
+```python
+number_one = input("Enter number 1: ")
+number_two = input("Enter number 2: ")
+
+print(f"Sum of {a} and {b} is {a+b}")
+```
+
+</TabItem>
+<TabItem value="wrong" label="❌ Wrong">
+
+```python
+b=input ( "Enter number 1" )
+a=input ( "Enter number 2" )
+
+print ( " Sum of",b,"and",a,"is",b+a )
+```
+
+</TabItem>
+</Tabs>
+
+:::
+
 
 ## Variables 
 
@@ -27,6 +72,7 @@ Variables are anything that store some kind of data. In Python, you don't need t
 ```python title="main.py"
 x = "Hello World"
 ```
+
 This line of code creates a variable called `x` and assigns the value `Hello World` to it.
 Variables are meant to be used when you are going to use the same value multiple times. For example the value of PI, which you can set to a variable and then use it repeatedly around your code.
 
