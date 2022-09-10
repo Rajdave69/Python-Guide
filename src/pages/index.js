@@ -34,7 +34,7 @@ export default function Home() {
       description="A simple and info-rich guide to Python Programming!">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/*<HomepageFeatures />*/}
       </main>
     </Layout>
   );
