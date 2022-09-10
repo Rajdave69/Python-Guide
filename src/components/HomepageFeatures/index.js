@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Easy to Understand',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Python is a very easy to understand language. It is very easy to learn and
+        use. It is very easy to read and write. This guide is written in very simple language.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Info Rich',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        This guide is very info rich. It contains a lot of information about Python Programming.
+        It maintains a simple language, being info rich at the same time.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Open Source',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This guide is fully open source. You can contribute to it by forking it/submitting a pull request on GitHub.
       </>
     ),
   },
