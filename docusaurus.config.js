@@ -118,7 +118,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Raj's Vault. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Raj's Python Guide | Made with ❤️ by <a href="https://rajtech.me">Raj Dave</a>`,
       },
       prism: {
         theme: lightCodeTheme,
