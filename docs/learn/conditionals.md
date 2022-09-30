@@ -2,12 +2,9 @@
 sidebar_position: 6
 ---
 
-import Tabs			from "@theme/Tabs";
-import TabItem		from "@theme/TabItem";
 
-# Conditionals 
 
-## What are conditionals?
+# Conditionals
 
 Conditionals are statements that allow you to check if a condition is true or false. If the condition is true, the code will execute. If the condition is false, the code will not execute.
 
@@ -152,3 +149,6 @@ if y == True:
 
 </TabItem>
 </Tabs>
+
+import Tabs			from "@theme/Tabs";
+import TabItem		from "@theme/TabItem";

@@ -1,8 +1,6 @@
 ---
 sidebar_position: 8
 ---
-import Tabs			from "@theme/Tabs";
-import TabItem		from "@theme/TabItem";
 
 # Functions
 
@@ -217,6 +215,23 @@ def print_hello():
 :::
 <br/>
 
+## Yield
+
+The `yield` statement is used to return from a function without destroying the states of its local variable and when the function is called, the execution starts from the last yield statement.
+
+```python
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+    
+for i in my_generator():
+    print(i)
+```
+
+Basically, `yield` is used like `return`, but you can continue to run code after the yield in the same function. You can also use `yield` to return multiple values.
+
+
 ## Return Value Annotations
 
 You can also specify the data-type of the return value. This is useful if you want to make sure the user gets the correct data-type from the function:
@@ -228,6 +243,7 @@ def square(number: int) -> int:
 
 Here, the `->` is used to specify the return value data-type. It is called a return value annotation. It is not required, but it is good practice to use it. The return value annotation is not checked by Python, it is just a hint for the user.
 
+
 ### Multiple Return Annotations
 
 You can also specify multiple return values. This is useful if you want to make sure the user gets the correct data-type from the function:
@@ -237,3 +253,5 @@ def add_or_concat(x, y) -> int | str:
     return x + y # If x and y are both integers, return an integer. Else it will return a string.
 ```
 
+import Tabs			from "@theme/Tabs";
+import TabItem		from "@theme/TabItem";

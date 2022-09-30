@@ -4,8 +4,6 @@ sidebar_position: 6
 
 # Loops
 
-## What are loops?
-
 Loops are used to repeat a block of code a certain number of times. There are two types of loops in Python: `for` loops and `while` loops.
 
 ## The `for` loop
