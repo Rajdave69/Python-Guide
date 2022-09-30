@@ -1,0 +1,8 @@
+{
+  "label": "Exercises",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Some Python exercises to get you started"
+  }
+}
