@@ -27,7 +27,6 @@ This will create a class named `MyClass`. The class will contain a variable name
 To create an object, use the class name as a function.
 
 ```python
-
 class MyClass:
     x = 5
     
