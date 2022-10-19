@@ -154,3 +154,61 @@ else:
 
 ## Exercise 7
 
+Make a simple interest calculator.
+Formula: `P * R * T / 100`
+
+<details><summary>Hint</summary>
+
+<p>
+
+Use the `input()` function to get the inputs from the user, and use the `float()` function to convert them to floats.
+Then, use the formula `P * R * T / 100` to calculate the simple interest.
+
+</p>
+
+</details>
+
+<details><summary>Solution</summary>
+
+```python
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the rate of interest: "))
+time = float(input("Enter the time period: "))
+   
+simple_interest = principal * rate * time / 100
+print(f"The simple interest is {simple_interest}")
+```
+
+</details>
+
+## Exercise 8
+
+Create a program that checks if you're old enough to drive.
+
+<details><summary>Hint</summary>
+
+<p>
+
+Use the `input()` function to get the user's age, and use the `int()` function to convert it to an integer.
+Then, use an `if` statement to check if the user is old enough to drive.
+
+</p>
+
+</details>
+
+<details><summary>Solution</summary>
+
+```python
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are old enough to drive!")
+else:
+    print("You are not old enough to drive!")
+```
+
+</details>
+
+## Exercise 9
+
+
