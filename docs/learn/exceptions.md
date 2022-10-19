@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 # Exceptions
@@ -33,16 +33,6 @@ Python has many built-in exceptions, and you can also create your own exceptions
 
 
 
-## Handling exceptions
-
-To handle exceptions, use the `try` and `except` keywords.
-
-```python
-try:
-    print(x)
-except:
-    print("An exception occurred") # The variable x is not defined, so an exception will occur
-```
 
 ## Raising an exception
 
@@ -57,13 +47,46 @@ if x < 0:
     raise Exception("Sorry, no numbers below zero") # Raise an exception if x is less than zero
 ```
 
-## Assert
 
-You can also use the `assert` keyword to raise an exception if a condition occurs.
+## Handling Exceptions
+
+After an exception occurs, you can deal with it in different ways.
+
+### The `try` block
+
+The `try` block lets you test a block of code for errors. It lets you run code and "catch" errors which will stop it from terminating the program.
+ 
+```python
+try:
+    print(x)
+except:
+    print("Something went wrong")
+```
+
+## The `finally` block
+
+The `finally` block, if specified, will be executed regardless if the try block raises an error or not.
 
 ```python
-x = -1
-
-assert x >= 0, "Sorry, no numbers below zero" # Raise an exception if x is less than zero
+try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The 'try except' is finished")
 ```
+
+## The `else` block
+
+The `else` block will be executed if no errors were raised.
+
+```python
+try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")
+```
+
 
