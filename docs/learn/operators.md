@@ -37,6 +37,13 @@ Assignment operators are used to assign values to variables:
 | //=      | x //= 3 | x = x // 3 |
 | **=      | x **= 3 | x = x ** 3 |
 
+There is also another operator known as the `walrus operator` which assigns a value to a variable as part of a larger expression. It is written as `:=` and is used as follows:
+
+```python
+if (n := len(a)) > 10:
+    print(f"List is too long ({n} elements, expected <= 10)")
+```
+
 ## Comparison Operators
 
 Comparison operators are used to compare two values:
