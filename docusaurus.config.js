@@ -11,7 +11,7 @@ const config = {
     "Raj's lil guide to learning Python",
   url: "https://rajtech.me",
   trailingSlash: false,
-  baseUrl: "/python-guide",
+  baseUrl: "/python-guide/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
