@@ -75,7 +75,7 @@ my_function() # Error
 
 When you want to declare only one argument, you can just put the name of the argument in the parentheses:
 
-The following example has a function with one argument (text). When the function is called, we pass along a string, which is used inside the function to print the it:
+The following example has a function with one argument (text). When the function is called, we pass along a string, which is used inside the function to print it:
 
 ```python
 def echo(text):
@@ -215,7 +215,7 @@ def print_hello():
 :::
 <br/>
 
-## Yield
+### Yield
 
 The `yield` statement is used to return from a function without destroying the states of its local variable and when the function is called, the execution starts from the last yield statement.
 
@@ -252,6 +252,16 @@ You can also specify multiple return values. This is useful if you want to make 
 def add_or_concat(x, y) -> int | str:
     return x + y # If x and y are both integers, return an integer. Else it will return a string.
 ```
+
+or you could do a bit more complex:
+
+```python
+def complex_function() -> list[list[str] or list[int]]:
+    return [["a", "b"], [1, 2]]
+```
+
+This is basically a string/int inside a list inside a list. The first list can contain a list of strings or a list of integers. This is a bit complex, but it is possible.
+
 
 import Tabs			from "@theme/Tabs";
 import TabItem		from "@theme/TabItem";
