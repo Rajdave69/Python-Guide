@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
         hasLogo={false}
       />
       <main className="content-wrap--home-page">
-        Hello and welcome to this Python Guide. I've crreated and maintained this in my free time,
+        Hello and welcome to this Python Guide. I've created and maintained this in my free time,
         primarily because a lot of people IRL ask me how to program in Python, and I thought it would be
         a good idea to create a info-rich guide for them. I hope you enjoy it!
         <br /> <br />
