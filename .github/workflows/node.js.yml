@@ -66,6 +66,10 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
         
-      - name: Deploy with rsync
-        run: rsync -avz --chown=github:www-data --chmod=Dg=rwx,Fg=rwx ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/rajtech.me/python-guide/
-
+      - name: Deploy
+        id: deploy_theme
+        uses: Pendect/action-rsyncer@v1.1.0
+        with:
+          flags: '-avc --delete'
+          src: 'build/'
+          dest: 'root@"${{secrets.SERVER_IP}}":/var/www/rajtech.me/python-guide'
