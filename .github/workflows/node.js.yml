@@ -6,8 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 
 jobs:
 
@@ -56,22 +56,26 @@ jobs:
         env:
           PREFIX_PATHS: 'true'
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
-        
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
+    
+    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+          
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: unnecessary
-
-      - name: Adding Known Hosts
-        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
+          username: ${{ secrets.SSH_USER }}
+          server: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }} 
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+ 
+          
+          # will put all file under this path
+          local_path: ./build/* # default is ./*
+          # files will copy to under remote_path
+          remote_path: /var/www/rajtech.me/python-guide/
+          
+          # sftp args
+          args: '-o ConnectTimeout=5'
         
-      - name: Deploy
-        id: deploy_theme
-        uses: Pendect/action-rsyncer@v1.1.0
-        env:
-          DEPLOY_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-        with:
-          flags: '-avc --delete'
-          src: 'build/'
-          dest: 'root@"${{secrets.SSH_HOST}}":/var/www/rajtech.me/python-guide'
+    
