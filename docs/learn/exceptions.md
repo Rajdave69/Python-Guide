@@ -32,7 +32,7 @@ Python has many built-in exceptions, and you can also create your own exceptions
 | 14  | OverflowError     | Raised when the result of an arithmetic operation is too large to be represented                           |
 
 
-
+The super class of all built-in exceptions is `BaseException`. All built-in, non-system-exiting exceptions are derived from `Exception`, directly or indirectly.
 
 ## Raising an exception
 
@@ -44,7 +44,7 @@ To throw (or raise) an exception, use the `raise` keyword.
 x = -1
 
 if x < 0:
-    raise Exception("Sorry, no numbers below zero") # Raise an exception if x is less than zero
+    raise ValueError("Sorry, no numbers below zero") # Raise an exception if x is less than zero
 ```
 
 
