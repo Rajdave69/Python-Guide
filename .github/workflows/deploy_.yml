@@ -30,6 +30,6 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: build/
+          source: build/*
           target: /var/www/rajtech.me/python-guide/
           rm: true
